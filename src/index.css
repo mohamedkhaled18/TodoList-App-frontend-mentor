@@ -1,0 +1,19 @@
+* { transition: 0.4s }
+
+:root {
+  --check-background: linear-gradient(148deg, #00a8ff 40% 11%, #9900ff);
+  --background: #fff;
+  --task-text: black;
+  --TodoList-background: rgb(255,255, 255);
+}
+
+:has(#dark):root {
+  --background: #222222;
+  --check-background: linear-gradient(148deg, #00a8ff 40% 11%, #9900ff);
+  --task-text: white;
+  --TodoList-background: rgb(58, 58, 58);
+}
+
+.active {
+  color: #027ff7;
+}
