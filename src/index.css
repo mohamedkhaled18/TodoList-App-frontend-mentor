@@ -7,6 +7,7 @@
   --TodoList-background: rgb(255,255, 255);
   --backgroundImage-desktop: url("../public/assets/bg-desktop-light.jpg");
   --backgroundImage-mobile: url("../public/assets/bg-mobile-light.jpg");
+  --bg-check: url('../public/assets/icon-check.bcf055e6.svg'), var(--check-background);
 }
 
 :has(#dark):root {
@@ -15,6 +16,7 @@
   --task-text: white;
   --TodoList-background: rgb(58, 58, 58);
   --backgroundImage-desktop: url("../public/assets/bg-desktop-dark.jpg");
+  --bg-check: url('../public/assets/icon-check.bcf055e6.svg'), var(--check-background);
   --backgroundImage-mobile: url("../public/assets/bg-mobile-dark.jpg");
 }
 

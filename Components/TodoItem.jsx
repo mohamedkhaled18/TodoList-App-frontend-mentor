@@ -36,7 +36,7 @@ const TodoItem = ({ id, task_text, check, setTodos, draggable, onDragStart, onDr
       />
       <label
         htmlFor={`done-${id}`}
-        className="w-[20px] h-[20px] bg-transparent cursor-pointer grid place-items-center rounded-full border-2 border-[var(--task-text)] bg-no-repeat bg-center peer-checked:bg-check"
+        className="w-[20px] h-[20px] bg-transparent cursor-pointer grid place-items-center rounded-full border-2 border-[var(--task-text)] transition-none bg-no-repeat bg-center peer-checked:border-0 peer-checked:[background-image:var(--bg-check)]"
       ></label>
 
       <p className="task-text text-[var(--task-text)] font-semibold text-xl flex-1 mx-4 peer-checked:line-through peer-checked:text-gray-400">
