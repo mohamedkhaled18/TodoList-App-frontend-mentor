@@ -18,7 +18,7 @@ const Container = () => {
   }, [todos])
 
   return (
-    <div className="_container w-[40%] absolute top-[20%]">
+    <div className="_container max-sm:w-full sm:min-w-[500px] absolute top-[10%] p-4">
       <Header theme={theme} setTheme={setTheme}/>
       <TodoInput setTodos={setTodos} />
       <TodoList todos_list={todos} setTodos={setTodos} />

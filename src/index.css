@@ -5,6 +5,8 @@
   --background: #fff;
   --task-text: black;
   --TodoList-background: rgb(255,255, 255);
+  --backgroundImage-desktop: url("../public/assets/bg-desktop-light.jpg");
+  --backgroundImage-mobile: url("../public/assets/bg-mobile-light.jpg");
 }
 
 :has(#dark):root {
@@ -12,6 +14,13 @@
   --check-background: linear-gradient(148deg, #00a8ff 40% 11%, #9900ff);
   --task-text: white;
   --TodoList-background: rgb(58, 58, 58);
+  --backgroundImage-desktop: url("../public/assets/bg-desktop-dark.jpg");
+  --backgroundImage-mobile: url("../public/assets/bg-mobile-dark.jpg");
+}
+
+body {
+  background-color: var(--background);
+  font-family: Josefin Sans, sans-serif;
 }
 
 .active {

@@ -4,15 +4,14 @@ const Background = () => {
 
   const { theme } = useContext(themeContext);
 
-  const background = {
-    light: "../public/assets/bg-desktop-light.c99caf89.jpg",
-    dark: "../public/assets/bg-desktop-dark.cf72eaad.jpg"
-  }
-
   return (
-    <div 
-      className={`background w-screen h-screen bg-[var(--background)]`}>
-      <img className="absolute top-0 right-0 w-full" src={theme === "light" ? background.light : background.dark} alt="" />
+    <div style={{
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+    }}
+      className="w-screen min-h-[calc(1/3*100vh)]
+        [background-image:var(--backgroundImage-mobile)] md:[background-image:var(--backgroundImage-desktop)]">
     </div>
   )
 }
