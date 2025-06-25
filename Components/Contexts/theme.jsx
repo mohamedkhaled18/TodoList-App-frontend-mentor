@@ -4,7 +4,10 @@ export const themeContext = createContext();
 
 const ThemeProvider = ({children}) => {
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("Theme");
+    return savedTheme ? savedTheme : 'light';
+  });
 
   return (
     <themeContext.Provider value={ {theme, setTheme} }>

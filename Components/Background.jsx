@@ -1,8 +1,4 @@
-import { themeContext } from "./Contexts/theme";
-import { useContext } from "react";
 const Background = () => {
-
-  const { theme } = useContext(themeContext);
 
   return (
     <div style={{

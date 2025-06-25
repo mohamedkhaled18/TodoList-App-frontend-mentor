@@ -24,11 +24,16 @@ const TodoInput = ({setTodos}) => {
     }
   }
 
+  function handleKeyUp(e) {
+    if (e.key === "Enter")
+      addTask();
+  }
+
   return(
     <div 
       className="task-input bg-[var(--TodoList-background)] flex my-10 p-3 rounded shadow-xl">
       <button onClick={addTask} className="add-btn">➕</button>
-      <input type="text" placeholder="Create a new todo..." 
+      <input type="text" placeholder="Create a new todo..." onKeyUp={handleKeyUp}
         className="ml-3 outline-0 border-0 w-full bg-transparent text-[var(--task-text)] text-xl" onInput={handleInput} value={newTodo} />
     </div>
   )

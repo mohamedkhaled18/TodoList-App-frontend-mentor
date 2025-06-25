@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 
 const Header = ({ theme, setTheme }) => {
 
@@ -5,6 +6,12 @@ const Header = ({ theme, setTheme }) => {
     light: "🌙",
     dark: "☀️",
   }
+  
+  useEffect(() => {
+    localStorage.setItem("Theme", theme);
+    document.body.id = theme;
+  }, [theme]);
+  
 
   const currentIcon = theme === 'light'? themeIcon.light : themeIcon.dark;
 
