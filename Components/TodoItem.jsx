@@ -44,7 +44,7 @@ const TodoItem = ({ id, task_text, check, setTodos, draggable, onDragStart, onDr
       </p>
 
       <button className="group-hover:opacity-100 opacity-0" onClick={removeTask}>
-        <img src="../public/assets/icon-cross.37f00ffb.svg" alt="delete btn" />
+        <p className="delete btn">❌</p>
       </button>
     </li>
   );

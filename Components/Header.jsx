@@ -2,8 +2,8 @@
 const Header = ({ theme, setTheme }) => {
 
   const themeIcon = {
-    light: "../public/assets/icon-moon.dadf6d0a.svg",
-    dark: "public/assets/icon-sun.fc80f87a.svg",
+    light: "🌙",
+    dark: "☀️",
   }
 
   const currentIcon = theme === 'light'? themeIcon.light : themeIcon.dark;
@@ -20,7 +20,7 @@ const Header = ({ theme, setTheme }) => {
           });
         }}>
         
-          <img src={currentIcon} alt="theme_icon" />
+          <p className="theme_icon text-4xl">{currentIcon}</p>
       </div>
     </div>
   )
